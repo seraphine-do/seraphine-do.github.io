@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Drag'n'explore en musique</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/css.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+  <div class="map">
+    <div class="inner">
+      <div class="hotspot rap" id="snoopdog"></div>
+      <div class="hotspot variete" id="trenet"></div>
+      <div class="hotspot jazz" id="armstrong"></div>
+      <div class="hotspot rap" id="eminem"></div>
+      <div class="hotspot rock" id="johnny"></div>
+      <div class="hotspot jazz" id="sinatra"></div>
+      <div class="hotspot monde" id="bobmarley"></div>
+      <div class="hotspot monde" id="ayo"></div>
+      <div class="hotspot rock" id="johnlennon"></div>
+      <div class="hotspot variete" id="angele"></div>
+      <div class="hotspot classique" id="bach"></div>
+      <div class="hotspot rock" id="hendrix"></div>
+      <div class="hotspot techno" id="skrillex"></div>
+      <div class="hotspot monde" id="tikenjahfakoly"></div>
+      <div class="hotspot classique" id="ravel"></div>
+      <div class="hotspot techno" id="avicii"></div>
+      <div class="hotspot classique" id="chopin"></div>
+      <div class="hotspot jazz" id="fitzgerald"></div>
+      <div class="hotspot rap" id="biggy"></div>
+      <div class="hotspot monde" id="calypso"></div>
+      <div class="hotspot variete" id="brassens"></div>
+      <div class="hotspot techno" id="DJsnake"></div>
+      <div class="hotspot rock" id="presley"></div>
+      <div class="hotspot rap" id="MCsolaar"></div>
+      <div class="hotspot techno" id="davidguetta"></div>
+      <div class="hotspot jazz" id="raycharles"></div>
+      <div class="hotspot variete" id="brel"></div>
+    </div>
+  </div>
+
+  <div class="count">
+    <span id="count_found">0</span> /
+    <span id='count_nb'>0</span>
+  </div>
+
+
+  <div class="menu">
+    Trouvez tous les musiciens de la catégorie:
+    <span id='mode'></span>
+ </div>
+
+  <div class="fiche" id="fiche1" data-hotspot="bach">
+    <div class="titre">
+       Bravo vous avez trouvé Jean-Sébastien Bach !<br>
+    </div>
+    Né le 21 mars 1685 et mort le 28 juillet 1750.<br>
+    Jean-Sébastien Bach, compositeur allemand, fait partie du style baroque. Il a fait un mois de prison pour atteinte à la majesté du souverain.<br>
+    Il a notamment composé la Cello suite No.1, prélude en sol majeur.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Prelude_in_g_major.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+  <div class="fiche" id="fiche2" data-hotspot="chopin">
+    <div class="titre">
+      Bravo vous avez trouvé Frédéric Chopin !<br>
+    </div>
+    Né le 1er mars 1810 et mort le 17 otobre 1849.<br>
+    Frédéric Chopin, compositeur et pianiste polonais, fait partie du style romantique. Il a un style de jeu tout en douceur et subtilité.<br>
+    Il a notamment composé la valse du Printemps.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Spring_waltz.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+  <div class="fiche" id="fiche3" data-hotspot="ravel">
+    <div class="titre">
+      Bravo vous avez trouvé Maurice Ravel !<br>
+    </div>
+    Né le 7 mars 1875 et mort le 28 décembre 1937.<br>
+    Maurice Ravel, compositeur français, fait partie du style moderne.<br>
+    Il a notamment composé le concerto pour la main gauche en ré majeur, puisque composé pour le pianiste Paul Wittgenstein qui a perdu son bras droit durant la Première Guerre mondiale.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Concerto_pour_la_main_gauche.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+
+  <div class="close"></div>
+
+
+  <div class="fiche" id="fiche1" data-hotspot="armstrong">
+    <div class="titre">
+      Bravo vous avez trouvé Louis Armstrong !<br>
+    </div>
+    Né le 4 août 1901 et mort le 6 juillet 1971.<br>
+    Louis Armstrong est un musicien de jazz et chanteur afro-américain. Il est également connu sous les surnoms de "Dippermouth", "Satchmo" et "Pops".<br>
+    Il a notamment enregistré What a Wonderful World qui est sorti sous forme de single au début de l'automne 1967.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/What_a_wonderful_world.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+  <div class="fiche" id="fiche2" data-hotspot="fitzgerald">
+    <div class="titre">
+      Bravo vous avez trouvé Ella Fitzgerald !<br>
+    </div>
+    Née le 25 avril 1917 et morte le 15 juin 1996.<br>
+    Ella Fitzgerald est une chanteuse afro-américaine de jazz, swing, scat, blues, gospel... Sa première vocation était la danse.<br>
+    Elle a notamment chanté Summertime, une composition de George Gershwin.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Summertime.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+  <div class="fiche" id="fiche3" data-hotspot="raycharles">
+    <div class="titre">
+      Bravo vous avez trouvé Ray Charles !<br>
+    </div>
+    Né le 23 septembre 1930 et mort le 10 juin 2004.<br>
+    Ray Charles, de son nom complet Raymond Charles Robinson, est un chanteur, compositeur, arrangeur et pianiste américain.<br>
+    Il a notamment repris Hit the Road Jack, toujours accompagné de ses chanteuses, The Realettes.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Hit_the_road_jack.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+  <div class="fiche" id="fiche4" data-hotspot="sinatra">
+    <div class="titre">
+      Bravo vous avez trouvé Frank Sinatra !<br>
+    </div>
+    Né le 12 décembre 1915 et mort le 14 mai 1998.<br>
+    Frank Sinatra est un chanteur, acteur et producteur de musique américain.<br>
+    Il a notamment repris Fly me to the Moon de Bart Howard. C'est une chanson d'amour qui est devenue un grand standard du jazz.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Fly_me_to_the_moon.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+
+  <div class="close"></div>
+
+
+  <div class="fiche" id="fiche1" data-hotspot="trenet">
+    <div class="titre">
+      Bravo vous avez trouvé Charles Trenet !<br>
+    </div>
+    Né le 18 mai 1913 et mort le 19 février 2001.<br>
+    Charles Trenet est un auteur, compositeur, et interprète français.<br>
+    Il a notamment composé Le Soleil et la Lune qui évoque avec humour leur rencontre impossible qui est en fait une métaphore de la rencontre amoureuse entre les hommes et les femmes.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Le_soleil_et_la_lune.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+  <div class="fiche" id="fiche2" data-hotspot="brassens">
+    <div class="titre">
+      Bravo vous avez trouvé Georges Brassens !<br>
+    </div>
+    Né le 22 octobre 1921 et mort le 29 octobre 1981.<br>
+    Georges Brassens est un auteur, compositeur, et interprète français.<br>
+    Il a notamment composé Les Copains d'abord. Cet hymne à l'amitié est devenu l'une de ses chansons les plus célèbres.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Les_copains_dabord.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+  <div class="fiche" id="fiche3" data-hotspot="angele">
+    <div class="titre">
+      Bravo vous avez trouvé Angèle !<br>
+    </div>
+    Née le 3 décembre 1995.<br>
+    Angèle est une autrice, compositrice, et interprète belge.<br>
+    Elle a notamment composé Balance ton Quoi, chanson féministe qui dénonce le sexisme, faisant référence au mouvement #BalanceTonPorc.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Balance_ton_quoi.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+  <div class="fiche" id="fiche4" data-hotspot="brel">
+    <div class="titre">
+      Bravo vous avez trouvé Jacques Brel !<br>
+    </div>
+    Né le 8 avril 1929 et mort le 9 octobre 1978.<br>
+    Jacques Brel est un auteur, compositeur, interprète, poète, acteur et réalisateur belge.<br>
+    Il a notamment composé la chanson Amsterdam. Une chanson à laquelle le Grand Jacques ne croyait pourtant pas vraiment et qu'il n'a jamais enregistrée en studio.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Amsterdam.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+
+  <div class="close"></div>
+
+
+  <div class="fiche" id="fiche1" data-hotspot="presley">
+    <div class="titre">
+      Bravo vous avez trouvé Elvis Presley !<br>
+    </div>
+    Né le 8 janvier 1935 et mort le 16 août 1977.<br>
+    Elvis Aaron Presley est un chanteur et acteur américain. Surnommé The King, il est l'une des icônes culturelles majeures du XXè siècle.<br>
+    Il a notamment enregistré Can't Help Falling in Love.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Cant_help_falling_in_love.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+  <div class="fiche" id="fiche2" data-hotspot="johnny">
+    <div class="titre">
+      Bravo vous avez trouvé Johnny Hallyday !<br>
+    </div>
+    Né le 15 juin 1943 et mort le 5 décembre 2017.<br>
+    Johnny Hallyday, nom de scène de Jean-Philippe Smet, est un chanteur, compositeur et acteur français.<br>
+    Il a notamment chanté Allumer le Feu, chanson écrite par Zazie et composée par Pascal Obispo.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Allumer_le_feu.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+  <div class="fiche" id="fiche3" data-hotspot="hendrix">
+    <div class="titre">
+      Bravo vous avez trouvé Jimi Hendrix !<br>
+    </div>
+    Né le 27 novembre 1942 et mort le 18 septembre 1970.<br>
+    James Marshall Hendrix, né Johnny Allen Hendrix, plus connu sous le nom de Jimi Hendrix est un guitariste, auteur, compositeur, et chanteur américain. Il est considéré comme l'un des plus grands joueurs de guitare électrique et comme l'un des artistes les plus novateurs de son époque.<br>
+    Il a notamment composé Purple Haze.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Purple_haze.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+  <div class="fiche" id="fiche4" data-hotspot="johnlennon">
+    <div class="titre">
+      Bravo vous avez trouvé John Lennon !<br>
+    </div>
+    Né le 9 octobre 1940 et mort le 8 décembre 1980.<br>
+    John Lennon, fondateur des Beatles, est un auteur, compositeur, interprète, musicien, écrivain et dessinateur britannique. Il meurt assassiné à 40 ans.<br>
+    Il a notamment composé Imagine, hymne pacifiste et utopique invitant l'auditeur à imaginer un monde sans frontières, sans religions, sans raisons de tuer, sans possession au sein d'une grande fraternité humaine.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Imagine.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+
+  <div class="close"></div>
+
+
+  <div class="fiche" id="fiche1" data-hotspot="bobmarley">
+    <div class="titre">
+      Bravo vous avez trouvé Bob Marley !<br>
+    </div>
+    Né le 6 février 1945 et mort le 11 mai 1981.<br>
+    Robert Nesta Marley dit Bob Marley est un auteur, compositeur, interprète et musicien jamaïcain. Il subit un attentat en se prenant une balle dans le bras, une dans la poitrine et cinq dans la cuisse. Deux jours plus tard, avec ses bandages, il donne le concert Smile Jamaica.<br>
+    Il a notamment composé One Love.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/One_love.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+  <div class="fiche" id="fiche2" data-hotspot="calypso">
+    <div class="titre">
+      Bravo vous avez trouvé Calypso Rose !<br>
+    </div>
+    Née le 27 avril 1940 et toujours parmi nous !<br>
+    Calypso Rose, née Linda McArtha Monica Sandy-Lewis, est une chanteuse trinidadienne de calypso. En 1978 elle remporte le concours du monarque du Calypso.<br>
+    Il a notamment chanté Calypso Blues.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Calypso_blues.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+  <div class="fiche" id="fiche3" data-hotspot="ayo">
+    <div class="titre">
+      Bravo vous avez trouvé Ayo !<br>
+    </div>
+    Née le 14 septembre 1980.<br>
+    Joy Olasunmibo Ogunmakin, de son nom de scène Ayo, est une chanteuse allemande d'origine nigériane. Son style se situe entre soul, folk et reggae.<br>
+    Elle a notamment chanté Down On my Knees.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Down_on_my_knees.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+  <div class="fiche" id="fiche4" data-hotspot="tikenjahfakoly">
+    <div class="titre">
+      Bravo vous avez trouvé Tiken Jah Fakoly !<br>
+    </div>
+    Né le 23 juin 1968.<br>
+    Tiken Jah Fakoly, de son vrai nom Doumbia Moussa Fakoly, est un auteur, compositeur, interprète et chanteur de reggae.<br>
+    Il a notamment composé Plus rien ne m'étonne.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Plus_rien_ne_metonnes.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+
+  <div class="close"></div>
+
+
+  <div class="fiche" id="fiche1" data-hotspot="MCsolaar">
+    <div class="titre">
+      Bravo vous avez trouvé MC Solaar !<br>
+    </div>
+    Né le 5 mars 1969.<br>
+    Claude M'Barali, dit MC Solaar ou parfois Claude MC, est un rappeur français d'origine tchadienne. Il est l'un des premiers artistes ayant popularisé le rap en France, dès le début des années 1990.<br>
+    Il a notamment composé Caroline, qui raconte une déception amoureuse.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Caroline.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+  <div class="fiche" id="fiche2" data-hotspot="eminem">
+    <div class="titre">
+      Bravo vous avez trouvé Eminem !<br>
+    </div>
+    Né le 17 octobre 1972.<br>
+    Eminem est producteur, acteur, compositeur, fondateur de label et surtout rappeur américain. Il est père de trois filles dont deux adoptives.<br>
+    Il a notamment composé Lose Yourself.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Lose_yourself.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+  <div class="fiche" id="fiche3" data-hotspot="snoopdog">
+    <div class="titre">
+      Bravo vous avez trouvé Snoop Dog !<br>
+    </div>
+    Né le 20 octobre 1971.<br>
+    Snoop Dogg, de son vrai nom Calvin Cordozar Broadus, est un rappeur, chanteur, producteur musical et acteur américain. Sa mère le surnomme rapidement "Snoopy" en raison de l'expression de son visage.<br>
+    Il a notamment composé Smoke Weed Everyday.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Smoke_weed_everyday.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+  <div class="fiche" id="fiche4" data-hotspot="biggy">
+    <div class="titre">
+      Bravo vous avez trouvé The Notorious B.I.G.!<br>
+    </div>
+    Né le 21 mai 1972 et mort le 9 mars 1997.<br>
+    The Notorious B.I.G., également surnommé Biggy Smalls, de son vrai nom Christopher George Latore Wallace, est un rappeur américain. Il est assassiné par arme à feu au volant.<br>
+    Il a notamment composé Nasty Girl.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Nasty_girl.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+
+  <div class="close"></div>
+
+
+  <div class="fiche" id="fiche1" data-hotspot="davidguetta">
+    <div class="titre">
+      Bravo vous avez trouvé David Guetta !<br>
+    </div>
+    Né le 7 novembre 1967.<br>
+    Pierre David Guetta est un DJ, compositeur et producteur français. Madonna a refusé de collaborer avec lui parce qu'il est de signe astrologique scorpion...<br>
+    Il a notamment produit Play Hard, interprétée par les chanteurs américains Ne-Yo et Akon.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Play_hard.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+  <div class="fiche" id="fiche2" data-hotspot="avicii">
+    <div class="titre">
+      Bravo vous avez trouvé Avicii !<br>
+    </div>
+    Né le 8 septtembre 1989 et mort le 20 avril 2018.<br>
+    Avicii, de son vrai nom Tim Bergling, est un producteur, musicien et DJ suédois. Il a aussi produit des titres sous les pseudonymes de Tim Berg et Tom Hangs.<br>
+    Il a notamment produit Wake Me Up en featuring avec le chanteur Aloe Blacc.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Wake_me_up.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+  <div class="fiche" id="fiche3" data-hotspot="skrillex">
+    <div class="titre">
+      Bravo vous avez trouvé Skrillex !<br>
+    </div>
+    Né le 15 janvier 1988.<br>
+    Skrillex, de son vrai nom Sonny John Moore, est un DJ et compositeur américain de musique électronique.<br>
+    Il a notamment composé Bangarang. Le titre est une référence au film la Revanche du Capitaine Crochet, dans lequel le cri de guerre des Enfants Perdus est "bangarang!".<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Bangarang.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+  <div class="fiche" id="fiche4" data-hotspot="DJsnake">
+    <div class="titre">
+      Bravo vous avez trouvé DJ Snake !<br>
+    </div>
+    Né le 13 juin 1986.<br>
+    William Grigahcine, dit DJ Snake, est un DJ, compositeur, producteur et réalisateur artistique français.<br>
+    Il a notamment produit Loco Contigo en featuring avec J.Balvin et Tyga.<br>
+    <audio class='audio' controls>
+      <source src='Musiques finales/Loco_contigo.mp3' type='audio/mpeg'>
+    </audio>
+  </div>
+
+  <div class="close"></div>
+
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/scrollbooster.min.js"></script>
+
+  <script type="text/javascript">
+    $(function() {
+      var scrollElScroll = document.querySelector(".map .inner");
+      var scr = new ScrollBooster({
+        viewport: document.querySelector(".map"),
+        emulateScroll: true,
+        bounce: false, // Pour éviter l'effet élastique
+        //friction: 0.2, // Pour régler la friction du déplacement
+        onUpdate: function(data) {
+          scrollElScroll.style.transform =
+            "translate(" + -data.position.x + "px, " + -data.position.y + "px)";
+        },
+      });
+      let modes=['rap','classique','jazz','variete','rock','monde','techno'];
+      let modesfr=['rap','musique classique','jazz','variété française','rock','musique du monde','techno'];
+      let modeindex=Math.floor(Math.random()*modes.length)
+      let mode= modes[modeindex]
+      let modefr= modesfr[modeindex]
+      $('#mode').text(modefr);
+      $(".hotspot").hide();
+      $('.hotspot.'+mode).show();
+      let nb= $('.hotspot.'+mode).length;
+      $('#count_nb').text(nb);
+    let count_found = 0;
+    $('.hotspot').not('.found').one('click', function(){
+        count_found++;
+        $(this).addClass('found')
+        let id = $(this).attr('id');
+        $('.menu-item[data-hotspot="'+id+'"]').addClass('found');
+
+        $('#count_found').text(count_found);
+      });
+      $('.hotspot').on('click', function(){
+        let id = $(this).attr('id');
+        $('.fiche').removeClass('show');
+        $('.close').addClass('show');
+        $('.fiche[data-hotspot="'+id+'"]').addClass('show');
+        $('.audio').each(function(){
+          $(this)[0].pause();
+        })
+        $('.fiche[data-hotspot="'+id+'"]').find('.audio')[0].currentTime=0;
+        $('.fiche[data-hotspot="'+id+'"]').find('.audio')[0].play();
+      });
+
+      $('.close').on('click', function(){
+        $('.fiche').removeClass('show');
+        $('.close').removeClass('show');
+        $('.audio').each(function(){
+          $(this)[0].pause();
+        })
+      });
+
+
+      /*
+      scr.setPosition({
+        x: 3000,
+        y: 3000
+      });
+      */
+    });
+  </script>
+</body>
+</html>
